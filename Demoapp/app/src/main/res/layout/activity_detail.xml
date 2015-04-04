@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_title">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/sunicon"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:src="@drawable/sun"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Detail"
+            android:textSize="30sp"
+            android:layout_toRightOf="@+id/sunicon"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:src="@drawable/mail"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:src="@drawable/threedot"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <com.example.linhdao.demoapp.WeatherSelectedDay
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherControl"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/blue_title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Humidity: 71%"
+            android:textSize="22sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pressure: 1016 hPa"
+            android:textSize="22sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="sans-serif-light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Wind: 2km/h WN"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-light"/>
+    </LinearLayout>
+</LinearLayout>
